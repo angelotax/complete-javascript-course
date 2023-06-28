@@ -76,8 +76,19 @@ const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
 /////////////////////////////////////////////////
 
 let arr = ['a', 'b', 'c', 'd', 'e'];
-// slice returns new Array, splice alters existing array
-console.log(arr.slice(2, 4));
-console.log(arr.slice(3, 4));
-console.log(arr.slice(3));
-console.log(arr.splice(2));
+let arr2 = ['a', 'b', 'c', 'd', 'e'];
+// slice returns new Array leaving original untouched, splice returns new array altering existing array
+console.log(arr);
+console.log('array before splice');
+console.log(arr2);
+console.log('array before slice');
+console.log('---------------');
+console.log(arr.splice(2, 4));
+console.log('new array returned by splice');
+console.log(arr2.slice(2, 4));
+console.log('new array returned by slice');
+console.log('---------------');
+console.log(arr);
+console.log('original array after splice is modified');
+console.log(arr2);
+console.log('original array after slice is the same array');
